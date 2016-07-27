@@ -1,7 +1,5 @@
-
 var React = require('react');
-var GetCity = require('./GetCity');
-
+var GetCityContainer = require('../containers/GetCityContainer');
 var styles = {
   container: {
     backgroundSize: 'cover',
@@ -22,7 +20,7 @@ var styles = {
 function Home (props) {
   return (
     <div style={styles.container}>
-      <GetCity />
+      <GetCityContainer />
     </div>
   )
 }
