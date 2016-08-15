@@ -4,22 +4,24 @@ var styles = {
   container: {
     backgroundSize: 'cover',
     backgroundImage: "url('https://images8.alphacoders.com/462/462329.jpg')",
+    // backgroundImage: "url('http://www.planwallpaper.com/static/images/sea-background01-o.jpg')",
     display: 'flex',
     justifyContent: 'center',
+    flexDirection: 'column',
     alignItems: 'center',
     height: '100%',
     width: '100%'
   },
   header: {
-    fontSize: 45,
     color: '#000',
-    fontWeight: 1000,
+    fontSize: '50px'
   },
 }
 
 function Home (props) {
   return (
     <div style={styles.container}>
+      <h1 style={styles.header}>Enter City and State</h1>
       <GetCityContainer />
     </div>
   )
